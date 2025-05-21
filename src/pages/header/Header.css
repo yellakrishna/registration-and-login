@@ -1,0 +1,9 @@
+.header{
+   
+    background-color: aqua;
+}
+.header a{
+
+  justify-content: space-around;
+    color: red;
+}
