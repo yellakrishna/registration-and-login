@@ -11,7 +11,7 @@ const AuthProvider = ({ children }) => {
 
 
     const fetchDat = () => {
-        axios.post('http://localhost:5000/yella/profile', {}, { withCredentials: true })
+        axios.post('https://register-login-backend-cm9c.onrender.com/yella/profile', {}, { withCredentials: true })
             .then((res) => {
                 if (res.data.status) {
                     setData(res.data.data)

@@ -14,7 +14,7 @@ const Profile = () => {
     const { setIsAuthenticated, isAuthenticated, myData } = useContext(AuthContext)
 
     const handleLogout = () => {
-        axios.post('http://localhost:5000/yella/logout', {}, { withCredentials: true })
+        axios.post('https://register-login-backend-cm9c.onrender.com/yella/logout', {}, { withCredentials: true })
             .then((res) => {
                 setIsAuthenticated(false)
                 toast("Logout Successful");
@@ -31,7 +31,7 @@ const Profile = () => {
     const fetchData = () => {
 
 
-        axios.post('http://localhost:5000/yella/profile', {}, { withCredentials: true })
+        axios.post('https://register-login-backend-cm9c.onrender.com/yella/profile', {}, { withCredentials: true })
             .then((res) => {
                 setLoading(false)
                 setData(res.data.data)

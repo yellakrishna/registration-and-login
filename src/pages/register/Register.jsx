@@ -26,7 +26,7 @@ function Register() {
     };
 
     axios
-      .post("http://localhost:5000/yella/register", payload)
+      .post("https://register-login-backend-cm9c.onrender.com/yella/register", payload)
       .then((res) => {
         setLoading(false);
        toast.success("Registered successfully!");

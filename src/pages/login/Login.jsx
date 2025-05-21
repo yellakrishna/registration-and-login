@@ -26,7 +26,7 @@ const Login = () => {
             password: password
         }
 
-        axios.post('http://localhost:5000/yella/login', payload, { withCredentials: true })
+        axios.post('https://register-login-backend-cm9c.onrender.com/yella/login', payload, { withCredentials: true })
             .then((res) => {
                 setIsAuthenticated(true)
                 setLoading(false)
