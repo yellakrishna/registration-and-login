@@ -19,10 +19,11 @@ const Profile = () => {
                 setIsAuthenticated(false)
                 toast("Logout Successful");
                 console.log("User logout success", res);
+               
             })
             .catch((err) => {
                 console.log("Error while logout", err)
-
+                 
             })
         navigate('/register')
     }
